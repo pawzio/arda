@@ -9,7 +9,7 @@ services:
       - "3000:3000"
     image: golang:1.16-alpine
     volumes:
-      - ../../angmar/.:/angmar
+      - ../../service/angmar/.:/angmar
     working_dir: /angmar
     command: ${COMMAND}
   arnor:
@@ -18,7 +18,7 @@ services:
       - "3001:3001"
     image: golang:1.16-alpine
     volumes:
-      - ../../arnor/.:/arnor
+      - ../../service/arnor/.:/arnor
     working_dir: /arnor
     command: ${COMMAND}
   erebor:
@@ -27,7 +27,7 @@ services:
       - "3002:3002"
     image: golang:1.16-alpine
     volumes:
-      - ../../erebor/.:/erebor
+      - ../../service/erebor/.:/erebor
     working_dir: /erebor
     command: ${COMMAND}
   esgaroth:
@@ -36,7 +36,7 @@ services:
       - "3003:3003"
     image: golang:1.16-alpine
     volumes:
-      - ../../esgaroth/.:/esgaroth
+      - ../../service/esgaroth/.:/esgaroth
     working_dir: /esgaroth
     command: ${COMMAND}
   fangorn:
@@ -45,7 +45,7 @@ services:
       - "3004:3004"
     image: golang:1.16-alpine
     volumes:
-      - ../../fangorn/.:/fangorn
+      - ../../service/fangorn/.:/fangorn
     working_dir: /fangorn
     command: ${COMMAND}
   gondor:
@@ -54,7 +54,7 @@ services:
       - "3005:3005"
     image: golang:1.16-alpine
     volumes:
-      - ../../gondor/.:/gondor
+      - ../../service/gondor/.:/gondor
     working_dir: /gondor
     command: ${COMMAND}
   gorgoroth:
@@ -63,7 +63,7 @@ services:
       - "3006:3006"
     image: golang:1.16-alpine
     volumes:
-      - ../../gorgoroth/.:/gorgoroth
+      - ../../service/gorgoroth/.:/gorgoroth
     working_dir: /gorgoroth
     command: ${COMMAND}
   gundabad:
@@ -72,7 +72,7 @@ services:
       - "3007:3007"
     image: golang:1.16-alpine
     volumes:
-      - ../../gundabad/.:/gundabad
+      - ../../service/gundabad/.:/gundabad
     working_dir: /gundabad
     command: ${COMMAND}
   isengard:
@@ -81,7 +81,7 @@ services:
       - "3008:3008"
     image: golang:1.16-alpine
     volumes:
-      - ../../isengard/.:/isengard
+      - ../../service/isengard/.:/isengard
     working_dir: /isengard
     command: ${COMMAND}
   lorien:
@@ -90,7 +90,7 @@ services:
       - "3009:3009"
     image: golang:1.16-alpine
     volumes:
-      - ../../lorien/.:/lorien
+      - ../../service/lorien/.:/lorien
     working_dir: /lorien
     command: ${COMMAND}
   mordor:
@@ -99,7 +99,7 @@ services:
       - "3010:3010"
     image: golang:1.16-alpine
     volumes:
-      - ../../mordor/.:/mordor
+      - ../../service/mordor/.:/mordor
     working_dir: /mordor
     command: ${COMMAND}
   moria:
@@ -108,7 +108,7 @@ services:
       - "3011:3011"
     image: golang:1.16-alpine
     volumes:
-      - ../../moria/.:/moria
+      - ../../service/moria/.:/moria
     working_dir: /moria
     command: ${COMMAND}
   orodruin:
@@ -117,7 +117,7 @@ services:
       - "3012:3012"
     image: golang:1.16-alpine
     volumes:
-      - ../../orodruin/.:/orodruin
+      - ../../service/orodruin/.:/orodruin
     working_dir: /orodruin
     command: ${COMMAND}
   osgiliath:
@@ -126,7 +126,7 @@ services:
       - "3013:3013"
     image: golang:1.16-alpine
     volumes:
-      - ../../osgiliath/.:/osgiliath
+      - ../../service/osgiliath/.:/osgiliath
     working_dir: /osgiliath
     command: ${COMMAND}
   rivendell:
@@ -135,7 +135,7 @@ services:
       - "3014:3014"
     image: golang:1.16-alpine
     volumes:
-      - ../../rivendell/.:/rivendell
+      - ../../service/rivendell/.:/rivendell
     working_dir: /rivendell
     command: ${COMMAND}
   rohan:
@@ -144,7 +144,7 @@ services:
       - "3016:3016"
     image: golang:1.16-alpine
     volumes:
-      - ../../rohan/.:/rohan
+      - ../../service/rohan/.:/rohan
     working_dir: /rohan
     command: ${COMMAND}
   weathertop:
@@ -153,6 +153,6 @@ services:
       - "3017:3017"
     image: golang:1.16-alpine
     volumes:
-      - ../../weathertop/.:/weathertop
+      - ../../service/weathertop/.:/weathertop
     working_dir: /weathertop
     command: ${COMMAND}
