@@ -41,6 +41,7 @@ func (s *server) Check(context.Context, *healthpb.HealthCheckRequest) (*healthpb
 	return &healthpb.HealthCheckResponse{Status: healthpb.HealthCheckResponse_SERVING}, nil
 }
 
+// Watch performs a watch for the serving status of the requested service.
 func (s *server) Watch(*healthpb.HealthCheckRequest, healthpb.Health_WatchServer) error {
 	return status.Errorf(codes.Unimplemented, "health check via Watch not implemented")
 }
