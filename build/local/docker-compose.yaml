@@ -3,6 +3,27 @@ networks:
   default:
     name: arda-local
 services:
+  db:
+    container_name: arda-db
+    ports:
+      - "5432:5432"
+    image: abhinavnair/pg-multi-db:12.2-alpine
+    restart: always
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready" ]
+      interval: 30s
+      timeout: 30s
+      retries: 3
+    environment:
+      - POSTGRES_MULTIPLE_DATABASES=rivendell
+      - POSTGRES_USER=arda
+      - POSTGRES_PASSWORD=pwd
+  db-migrate:
+    container_name: arda-db-migrate
+    image: migrate/migrate:v4.14.1
+    restart: "no"
+    entrypoint: ""
+    command: "sh -c exit 0"
   angmar:
     container_name: angmar-go
     ports:
