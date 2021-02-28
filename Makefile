@@ -26,3 +26,11 @@ migrate-up:
 		${COMPOSE} run --rm -v $(shell pwd)/service/$$p/data/migrations:/migrations db-migrate \
 		sh -c './migrate -path /migrations -database postgres://arda:pwd@db:5432/$$p?sslmode=disable up'\
 	); done
+
+PROTO_SERVICES := rivendell
+
+gen-proto:
+	for p in $(PROTO_SERVICES); do (\
+		echo $$p; \
+		cd service/$$p && make gen-proto \
+	); done
