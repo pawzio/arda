@@ -1,0 +1,158 @@
+version: '3.8'
+networks:
+  default:
+    name: arda-local
+services:
+  angmar:
+    container_name: angmar-go
+    ports:
+      - "3000:3000"
+    image: golang:1.16-alpine
+    volumes:
+      - ../../angmar/.:/angmar
+    working_dir: /angmar
+    command: ${COMMAND}
+  arnor:
+    container_name: arnor-go
+    ports:
+      - "3001:3001"
+    image: golang:1.16-alpine
+    volumes:
+      - ../../arnor/.:/arnor
+    working_dir: /arnor
+    command: ${COMMAND}
+  erebor:
+    container_name: erebor-go
+    ports:
+      - "3002:3002"
+    image: golang:1.16-alpine
+    volumes:
+      - ../../erebor/.:/erebor
+    working_dir: /erebor
+    command: ${COMMAND}
+  esgaroth:
+    container_name: esgaroth-go
+    ports:
+      - "3003:3003"
+    image: golang:1.16-alpine
+    volumes:
+      - ../../esgaroth/.:/esgaroth
+    working_dir: /esgaroth
+    command: ${COMMAND}
+  fangorn:
+    container_name: fangorn-go
+    ports:
+      - "3004:3004"
+    image: golang:1.16-alpine
+    volumes:
+      - ../../fangorn/.:/fangorn
+    working_dir: /fangorn
+    command: ${COMMAND}
+  gondor:
+    container_name: gondor-go
+    ports:
+      - "3005:3005"
+    image: golang:1.16-alpine
+    volumes:
+      - ../../gondor/.:/gondor
+    working_dir: /gondor
+    command: ${COMMAND}
+  gorgoroth:
+    container_name: gorgoroth-go
+    ports:
+      - "3006:3006"
+    image: golang:1.16-alpine
+    volumes:
+      - ../../gorgoroth/.:/gorgoroth
+    working_dir: /gorgoroth
+    command: ${COMMAND}
+  gundabad:
+    container_name: gundabad-go
+    ports:
+      - "3007:3007"
+    image: golang:1.16-alpine
+    volumes:
+      - ../../gundabad/.:/gundabad
+    working_dir: /gundabad
+    command: ${COMMAND}
+  isengard:
+    container_name: isengard-go
+    ports:
+      - "3008:3008"
+    image: golang:1.16-alpine
+    volumes:
+      - ../../isengard/.:/isengard
+    working_dir: /isengard
+    command: ${COMMAND}
+  lorien:
+    container_name: lorien-go
+    ports:
+      - "3009:3009"
+    image: golang:1.16-alpine
+    volumes:
+      - ../../lorien/.:/lorien
+    working_dir: /lorien
+    command: ${COMMAND}
+  mordor:
+    container_name: mordor-go
+    ports:
+      - "3010:3010"
+    image: golang:1.16-alpine
+    volumes:
+      - ../../mordor/.:/mordor
+    working_dir: /mordor
+    command: ${COMMAND}
+  moria:
+    container_name: moria-go
+    ports:
+      - "3011:3011"
+    image: golang:1.16-alpine
+    volumes:
+      - ../../moria/.:/moria
+    working_dir: /moria
+    command: ${COMMAND}
+  orodruin:
+    container_name: orodruin-go
+    ports:
+      - "3012:3012"
+    image: golang:1.16-alpine
+    volumes:
+      - ../../orodruin/.:/orodruin
+    working_dir: /orodruin
+    command: ${COMMAND}
+  osgiliath:
+    container_name: osgiliath-go
+    ports:
+      - "3013:3013"
+    image: golang:1.16-alpine
+    volumes:
+      - ../../osgiliath/.:/osgiliath
+    working_dir: /osgiliath
+    command: ${COMMAND}
+  rivendell:
+    container_name: rivendell-go
+    ports:
+      - "3014:3014"
+    image: golang:1.16-alpine
+    volumes:
+      - ../../rivendell/.:/rivendell
+    working_dir: /rivendell
+    command: ${COMMAND}
+  rohan:
+    container_name: rohan-go
+    ports:
+      - "3016:3016"
+    image: golang:1.16-alpine
+    volumes:
+      - ../../rohan/.:/rohan
+    working_dir: /rohan
+    command: ${COMMAND}
+  weathertop:
+    container_name: weathertop-go
+    ports:
+      - "3017:3017"
+    image: golang:1.16-alpine
+    volumes:
+      - ../../weathertop/.:/weathertop
+    working_dir: /weathertop
+    command: ${COMMAND}
