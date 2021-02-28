@@ -51,3 +51,17 @@
 | [moria](moria)           | ad                     |
 | [orodruin](orodruin)     | profile                |
 | [fangorn](fangorn)       | loadgen                |
+
+## Installation instructions
+- Install golang
+```shell
+brew install go
+```
+- Install protoc
+```shell
+brew install protobuf
+```
+- Install protoc-gen-go
+```shell
+go get google.golang.org/protobuf/cmd/protoc-gen-go google.golang.org/grpc/cmd/protoc-gen-go-grpc
+```

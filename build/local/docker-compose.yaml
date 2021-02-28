@@ -11,6 +11,8 @@ services:
     volumes:
       - ../../service/angmar/.:/angmar
     working_dir: /angmar
+    environment:
+      PORT: "3000"
     command: ${COMMAND}
   arnor:
     container_name: arnor-go
@@ -20,6 +22,8 @@ services:
     volumes:
       - ../../service/arnor/.:/arnor
     working_dir: /arnor
+    environment:
+      PORT: "3001"
     command: ${COMMAND}
   erebor:
     container_name: erebor-go
@@ -29,6 +33,8 @@ services:
     volumes:
       - ../../service/erebor/.:/erebor
     working_dir: /erebor
+    environment:
+      PORT: "3002"
     command: ${COMMAND}
   esgaroth:
     container_name: esgaroth-go
@@ -38,6 +44,8 @@ services:
     volumes:
       - ../../service/esgaroth/.:/esgaroth
     working_dir: /esgaroth
+    environment:
+      PORT: "3003"
     command: ${COMMAND}
   fangorn:
     container_name: fangorn-go
@@ -47,6 +55,8 @@ services:
     volumes:
       - ../../service/fangorn/.:/fangorn
     working_dir: /fangorn
+    environment:
+      PORT: "3004"
     command: ${COMMAND}
   gondor:
     container_name: gondor-go
@@ -56,6 +66,8 @@ services:
     volumes:
       - ../../service/gondor/.:/gondor
     working_dir: /gondor
+    environment:
+      PORT: "3005"
     command: ${COMMAND}
   gorgoroth:
     container_name: gorgoroth-go
@@ -65,6 +77,8 @@ services:
     volumes:
       - ../../service/gorgoroth/.:/gorgoroth
     working_dir: /gorgoroth
+    environment:
+      PORT: "3006"
     command: ${COMMAND}
   gundabad:
     container_name: gundabad-go
@@ -74,6 +88,8 @@ services:
     volumes:
       - ../../service/gundabad/.:/gundabad
     working_dir: /gundabad
+    environment:
+      PORT: "3007"
     command: ${COMMAND}
   isengard:
     container_name: isengard-go
@@ -83,6 +99,8 @@ services:
     volumes:
       - ../../service/isengard/.:/isengard
     working_dir: /isengard
+    environment:
+      PORT: "3008"
     command: ${COMMAND}
   lorien:
     container_name: lorien-go
@@ -92,6 +110,8 @@ services:
     volumes:
       - ../../service/lorien/.:/lorien
     working_dir: /lorien
+    environment:
+      PORT: "3009"
     command: ${COMMAND}
   mordor:
     container_name: mordor-go
@@ -101,6 +121,8 @@ services:
     volumes:
       - ../../service/mordor/.:/mordor
     working_dir: /mordor
+    environment:
+      PORT: "3010"
     command: ${COMMAND}
   moria:
     container_name: moria-go
@@ -110,6 +132,8 @@ services:
     volumes:
       - ../../service/moria/.:/moria
     working_dir: /moria
+    environment:
+      PORT: "3011"
     command: ${COMMAND}
   orodruin:
     container_name: orodruin-go
@@ -119,6 +143,8 @@ services:
     volumes:
       - ../../service/orodruin/.:/orodruin
     working_dir: /orodruin
+    environment:
+      PORT: "3012"
     command: ${COMMAND}
   osgiliath:
     container_name: osgiliath-go
@@ -128,6 +154,8 @@ services:
     volumes:
       - ../../service/osgiliath/.:/osgiliath
     working_dir: /osgiliath
+    environment:
+      PORT: "3014"
     command: ${COMMAND}
   rivendell:
     container_name: rivendell-go
@@ -137,6 +165,8 @@ services:
     volumes:
       - ../../service/rivendell/.:/rivendell
     working_dir: /rivendell
+    environment:
+      PORT: "3015"
     command: ${COMMAND}
   rohan:
     container_name: rohan-go
@@ -146,6 +176,8 @@ services:
     volumes:
       - ../../service/rohan/.:/rohan
     working_dir: /rohan
+    environment:
+      PORT: "3016"
     command: ${COMMAND}
   weathertop:
     container_name: weathertop-go
@@ -155,4 +187,6 @@ services:
     volumes:
       - ../../service/weathertop/.:/weathertop
     working_dir: /weathertop
+    environment:
+      PORT: "3017"
     command: ${COMMAND}
